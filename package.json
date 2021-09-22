@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/cmatan10/shop/issues"
   },
-  "homepage": "https://github.com/cmatan10/shop#readme"
+  "homepage": "https://github.com/cmatan10/shop#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.7",
+    "shortid": "^2.2.16"
+  }
 }
