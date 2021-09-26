@@ -6,5 +6,6 @@ export const productsReducer = (state = {}, action) => {
         return { items: action.payload };
       default:
         return state;
+        
     }
   };
