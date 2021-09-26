@@ -18,6 +18,8 @@ class App extends React.Component {
       sort: "",
     };
   }
+
+
   createOrder = (order) =>{
     alert("need to save order for " + order.name)
   }
@@ -45,6 +47,7 @@ class App extends React.Component {
     }
     this.setState({cartItems})
     localStorage.setItem("cartItems", JSON.stringify(cartItems))
+    
   };
 
   sortProducts = (event) => {
@@ -70,6 +73,7 @@ class App extends React.Component {
     }));
   };
   filterProducts = (event) => {
+    
     console.log(event.target.value);
     if (event.target.value === "") {
       this.setState({ size: event.target.value, products: data.products });
